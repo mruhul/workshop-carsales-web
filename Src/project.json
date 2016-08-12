@@ -1,17 +1,36 @@
 {
-    "version": "1.0.0-*",    
-    "compilationOptions": {
+    "webroot":  "wwwroot",
+    "version": "1.0.0-*",
+    "buildOptions": {
+        "emitEntryPoint": true
     },
-
     "dependencies": {
-        "NETStandard.Library": "1.6.0",
-        "Bolt.Logger.NLog": "1.0.0.1",
-        "Bolt.Cache": "1.3.0",
-        "Bolt.RequestBus.Autofac": "1.0.0.2",
-        "Bolt.RestClient": "2.1.0.1"
-    },
+        "NETStandard.Library": "1.6.*",
 
+        "Microsoft.AspNetCore.Diagnostics": "1.0.*",
+        "Microsoft.AspNetCore.Hosting":"1.0.*",
+        "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.*",
+        "Microsoft.Extensions.Configuration.Json": "1.0.*",
+        "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.*",
+        "Microsoft.AspNetCore.Mvc": "1.0.*",
+        "Microsoft.AspNetCore.Server.IISIntegration": "1.0.*",
+        "Microsoft.AspNetCore.Server.Kestrel": "1.0.*",
+        "Microsoft.AspNetCore.StaticFiles": "1.0.*",
+        "Newtonsoft.Json": "9.0.*",
+        "System.Net.Http": "4.1.*",
+       "NLog.Extensions.Logging": "1.0.0-*",
+
+        "Autofac.Extensions.DependencyInjection":"4.0.*",
+        "Bolt.Cache": "1.3.*",
+        "Bolt.RequestBus.Autofac": "1.0.*",
+        "Bolt.RestClient": "2.1.*",
+    	"Bolt.Serializer.Json": "1.0.*" ,
+    	"Bolt.Serializer": "1.0.*",
+    	"Bolt.Common.Extensions": "1.0.*",
+    	"Bolt.Logger": "1.0.*",
+        "Bolt.Logger.NLog": "1.0.*"
+    },
     "frameworks": {
-        "net46":{}
+        "net461": {}
     }
 }
